@@ -81,9 +81,8 @@ let cbtquestions=[{
 // }
 
 
-
+// To display/show questions
 function displayquestions() {
-    // To display/show questions
     display.innerHTML =`<h3>${index+1}.${cbtquestions[index].question}</h3>`
     cbtquestions[index].options.forEach(function(element, i) {
         display.innerHTML += `<input type="radio" name= "answer" ${
